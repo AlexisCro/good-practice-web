@@ -49,3 +49,19 @@ GIT, a pour principale différence avec les autres SCMs, considère chaque modif
 GIT sauvegarde des snapshots et donc l'intégralité du code à un moment T donné. 
 
 **La quasi-totalité des actions GIT sont locales**
+
+GIT s'occupe de l'intégrité des data. A chaque modification commit une "somme de controle" est effectué et fournis un identifiant unique qui sert de référence. 
+
+C'est le SHA-1 d'un commit => chaîne de 40 caractères hexadécimaux.
+
+
+#### GIT config
+La config va permettre plusieurs choses telles que la connexion à notre compte GITHUB, la traçabilité, GITLab etc par la définition de notre mail, identifiant, etc. 
+
+Elle permet également de configurer d'autres éléments tels que la coloration syntaxique. 
+
+Les configs de GIT existant sont: 
+- global : L’endroit suivant visité par Git est le fichier `~/.gitconfig`
+- local : Git recherche des valeurs de configuration dans le fichier de configuration du répertoire Git (.git/config) du dépôt en cours d’utilisation.
+- system : utilisant le fichier de config système.
+

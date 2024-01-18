@@ -62,6 +62,8 @@ git checkout <nom-de-branche>
 
 *Réaliser un `git checkout -b <nom-de-branche>` permet de créer une nouvelle branche et de passer directement à celle-ci.*
 
+*Réaliser un `git checkout <nom-de-branche>` si la branche existe sur le dépôt distant la branche sera créée, on se placera dessus, track la branche distante et pull*
+
 ### `git branch`
 La commande `git branch` permet plusieurs chose suivant les options passées à cette commande.
 
@@ -80,3 +82,16 @@ git branch -u origin <branch-locale> #version plus courte de la commande au-dess
 ### `git log`
 Cette commande présente la liste des commits dans l'ordre chronologique, elle permet entre autre de récupérer le SHA d'un commit. 
 
+## Une bonne habitude
+Une bonne habitude serait de réaliser toujours un cycle au moment de la création d'une branche ou bien de son travail sur une branche. 
+
+### Création d'unne branche
+En partant de la branche develop :
+- `git pull`
+- `git checkout -b <nom de ma branche>`
+- modifications nécessaires
+- `git status`
+- `git add <option souhaitée>`
+- `git status`
+- `git commit -m <message commit>`
+- `git push` 
